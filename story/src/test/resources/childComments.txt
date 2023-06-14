@@ -1,0 +1,42 @@
+[
+    {
+        "text": "I’m a fan of charging market efficient rates for shared goods. The congestion situation in the Holland Tunnel is awful and bleeds out into various streets of Manhattan as well. The cost of sitting in crawling traffic with aggressive drivers cutting around is probably much more than an extra $20.",
+        "hackApiHandle": "Tinyyy"
+    },
+    {
+        "text": "My main concern as NYer is the governments inability to build transit, and not for lack of money.<p>NY will find it relatively easy to institute a new tax on drivers, but will the billions collected actually make transit better in any tangible way?<p>NYC is also hamstrung by having its streets controlled locally by our DOT, but our transit &amp; bridges controlled by a state agency.<p>We just caved (again) entirely to the transit unions in the last contract negotiation.  We have subway lines &amp; trains wired up for 1 man operation but run them staffed with 2 due to union work rules.<p>We have for years instead of building elevators, paid 3rd party access-a-ride minibus&#x2F;van drivers to provide Uber-like service to anyone in need.<p>We are planning to spend something like $3B&#x2F;mile to expand a single train line a few stops further north.<p>The MTA estimates they can put in platform doors like other developed world cities in only 1&#x2F;3 of stations, at an average cost of $50M&#x2F;station.<p>We spent something close to $10B building an entire new terminal for LIRR underneath an existing Metro North terminal when there was enough capacity to serve both out of the existing station.  Bureaucratic squabbles between divisions of MTA serving LI &amp; NY&#x2F;CT were mitigated by spending $10B.  Oh and for the average LIRR rider, despite having 2 Manhattan terminals they can get a train to, the net service has actually been reduced in terms of trains per day.<p>We basically need a modern era Robert Moses to consolidate NYC DOT&#x2F;MTA&#x2F;Port Authority and whatever other agencies and bring us into the modern era.",
+        "hackApiHandle": "steveBK123"
+    },
+    {
+        "text": "A big proportion of the opposition is coming from New Jersey where former Governor Chris Christie systematically diverted public transit funding to constructing more roads leaving NJ Transit with a maintenance backlog, inadequate infrastructure and unhappy workers who were poached by the MTA. This resulted in a mismatch where the infrastructure is designed to favor driving on one side of the river and a fee designed to discourage driving and encourage public transit on the other side.",
+        "hackApiHandle": "superseeplus"
+    },
+    {
+        "text": "See also:<p>London congestion charge:  <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;London_congestion_charge\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;London_congestion_charge</a><p>Singapore Electronic Road Pricing: <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Electronic_Road_Pricing\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Electronic_Road_Pricing</a><p>Stockholm congestion tax: <a href=\"https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Stockholm_congestion_tax\" rel=\"nofollow\">https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Stockholm_congestion_tax</a>",
+        "hackApiHandle": "cj"
+    },
+    {
+        "text": "So rich people (who really do not care about few dollars) will be able to drive to downtown just for fun. while poor people who truly need to come to downtown by car will struggle.<p>This is an unfortunate reality of life: wealth equates to more available time.",
+        "hackApiHandle": "tlogan"
+    },
+    {
+        "text": "[flagged]",
+        "hackApiHandle": "DirectorKrennic"
+    },
+    {
+        "text": "There&#x27;s an important concept to the success of city planning: the alignment of incentives.<p>When transit is faster and cheaper than driving, people don&#x27;t drive as much. The individualistic personal freedom of the automobile doesn&#x27;t outweigh those practical aspects of getting around. People generally make pretty logical decisions about what they want to do.<p>I&#x27;m definitely in favor of congestion charges in certain areas of NYC. If you&#x27;re downtown in a car you are taking up some incredibly valuable real estate that could be alternatively dedicated to space for human beings.<p>I think about cities that have implemented taxes for disposable plastic bags. I find it somewhat hilarious how many people consider these policies to be anti-freedom government money-grabs. They make a libertarian&#x27;s blood boil!<p>Even assuming those folks are correct, it doesn&#x27;t really matter, because these taxes are incredibly effective. It&#x27;s  eye-opening to see how a nearly insignificant tax (literal pennies per bag) changes the behavior of <i>everyone</i>.<p>In cities with bag taxes, cashiers don&#x27;t default to throwing your stuff in a bunch of bags, they ask you what you want first. Without the bag tax, some people who don&#x27;t even have a strong preference to receive bags will end up with them just because the cashier put their items inside automatically. Then, customers start bringing their own reusable bags, use their existing backpacks and totes that they already own, and&#x2F;or people will just carry a few items without a bag. The end result that the tax was going for has occurred regardless of how mad the individualists get: thousands of single-use disposable items stay out of landfills.<p>This is the same idea for congestion charges: people in NYC who might default to taking an Uber or taxi to get somewhere that&#x27;s often the same speed or faster to get to on a subway or bus are going to think twice, because there&#x27;s the psychological knowledge that their behavior is being punished, even if only by a few dollars or cents.",
+        "hackApiHandle": "dangus"
+    },
+    {
+        "text": "So despite the massive ridership of the subway and the fully paid infrastructure and rights of way from 100 years ago, it can&#x27;t throw off enough cash for modernization of its systems?<p>And instead politicians decide to tax the successful mode of transportation, which is cars. Note that given the density and NY gas taxes, it is a certainty that cars in this area generate surplus cash.",
+        "hackApiHandle": "shrubble"
+    },
+    {
+        "text": "Wow. So much negativity. As far as I’m concerned, even if the city burns every dollar it collects, if this gets some cars off the island, it’s a win. It’s time to stop tolerating personal vehicles in our most dense urban centers.",
+        "hackApiHandle": "pkulak"
+    },
+    {
+        "text": "For those unfamiliar with NYC, street parking is free basically everywhere so the space cars take up is already heavily subsidized.",
+        "hackApiHandle": "automatoney"
+    }
+]
