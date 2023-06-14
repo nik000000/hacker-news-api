@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  hacker-news-api:
+    image: docker.io/jangidn477/mmv2-story:0.0.1-SNAPSHOT
+    mem_limit: 1000m
+    ports:
+      - "9090:9090"
+    networks:
+      - app-network
+    depends_on:
+      - redis
+    environment:
+      SPRING.DATA.REDIS.HOST: host.docker.internal
+      SPRING.DATA.REDIS.PORT: 6379
+
+  redis:
+    image: 'redis:latest'
+    mem_limit: 1000m
+    ports:
+      - "6379:6379"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    networks:
+      - app-network
+
+
+networks:
+  app-network:
