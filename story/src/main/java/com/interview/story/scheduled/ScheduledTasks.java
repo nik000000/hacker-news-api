@@ -16,7 +16,7 @@ import java.util.*;
 @Getter
 public class ScheduledTasks {
 
-    private SortedSet<Story> allStoriesFromHackerNewsApi;
+    private SortedSet<Story> allStoriesFromHackerNewsApi = new TreeSet<>(Comparator.comparingInt(Story::getScore).reversed().thenComparing(Story::getTitle));
     private static final Logger logger = LoggerFactory.getLogger(ScheduledTasks.class);
 
     /**

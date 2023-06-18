@@ -6,7 +6,6 @@ import com.interview.story.services.StoryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -18,7 +17,7 @@ public class StoryServiceImpl implements StoryService {
     /**
      * Set to store all past stories served
      */
-    private final Set<Story> pastStories = new HashSet<>();
+    private static Set<Story> pastStories = new LinkedHashSet<>();
 
     @Autowired
     public StoryServiceImpl(ScheduledTasks scheduledTasks) {
@@ -28,7 +27,7 @@ public class StoryServiceImpl implements StoryService {
     @Override
     public List<Story> getTopTenStories() {
         List<Story> topTenStories = scheduledTasks.getAllStoriesFromHackerNewsApi().stream().limit(10).toList();
-        addToPastStorySet(topTenStories);
+        this.addToPastStorySet(topTenStories);
         return topTenStories;
     }
 
@@ -38,9 +37,8 @@ public class StoryServiceImpl implements StoryService {
      * @return Set<Story>
      */
     @Override
-    @Cacheable("pastStories")
     public Set<Story> getPastTopStories() {
-        return this.pastStories;
+        return pastStories;
     }
 
     /**
