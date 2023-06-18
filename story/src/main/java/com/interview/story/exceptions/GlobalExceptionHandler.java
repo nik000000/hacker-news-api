@@ -18,4 +18,22 @@ public class GlobalExceptionHandler {
                 .build();
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorResponse);
     }
+
+    @ExceptionHandler(StoryNotFoundException.class)
+    public ResponseEntity<ApiErrorResponse> handleStoryNotFoundException(StoryNotFoundException exception){
+        ApiErrorResponse errorResponse = ApiErrorResponse.builder()
+                .message(exception.getMessage())
+                .timestamp(new Date())
+                .build();
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
+    }
+
+    @ExceptionHandler(CommentNotFoundException.class)
+    public ResponseEntity<ApiErrorResponse> handleCommentNotFoundException(CommentNotFoundException exception){
+        ApiErrorResponse errorResponse = ApiErrorResponse.builder()
+                .message(exception.getMessage())
+                .timestamp(new Date())
+                .build();
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
+    }
 }

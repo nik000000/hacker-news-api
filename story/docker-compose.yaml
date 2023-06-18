@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
   hacker-news-api:
-    image: docker.io/jangidn477/mmv2-story:0.0.1-SNAPSHOT
-    mem_limit: 1000m
+    image: hacker-news-api
+    mem_limit: 4G
     ports:
       - "9090:9090"
     networks:
@@ -16,7 +16,7 @@ services:
 
   redis:
     image: 'redis:latest'
-    mem_limit: 1000m
+    mem_limit: 1G
     ports:
       - "6379:6379"
     environment:

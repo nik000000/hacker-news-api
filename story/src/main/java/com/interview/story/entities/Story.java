@@ -1,5 +1,6 @@
 package com.interview.story.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.*;
@@ -36,8 +37,8 @@ public class Story implements Serializable {
     /**
      * Fields to be used but not returned in response
      */
-//    @Getter(onMethod = @__(@JsonIgnore))
-//    @Setter(onMethod = @__(@JsonProperty))
+    @Getter(onMethod = @__(@JsonIgnore))
+    @Setter(onMethod = @__(@JsonProperty))
     private int[] kids;
     private String type;
 

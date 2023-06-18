@@ -4,7 +4,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.interview.story.entities.Story;
 import com.interview.story.entities.TopComment;
-import com.interview.story.services.impl.HackerNewsApiServiceImpl;
+import com.interview.story.services.CommentService;
+import com.interview.story.services.StoryService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -24,7 +25,6 @@ import java.io.InputStream;
 import java.util.LinkedList;
 import java.util.stream.Collectors;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -35,7 +35,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class HackerNewsControllerTest {
 
     @MockBean
-    private HackerNewsApiServiceImpl hackerNewsApiService;
+    private StoryService storyService;
+
+    @MockBean
+    private CommentService commentService;
 
     @Autowired
     private ResourceLoader resourceLoader;
@@ -67,7 +70,7 @@ class HackerNewsControllerTest {
 
     @Test
     void getTopStories() throws Exception {
-        Mockito.when(hackerNewsApiService.getTopTenStories()).thenReturn(allStories);
+        Mockito.when(storyService.getTopTenStories()).thenReturn(allStories);
 
         // actual request for url.
         mockMvc.perform(
@@ -85,7 +88,7 @@ class HackerNewsControllerTest {
 
     @Test
     void getAllPastStories() throws Exception {
-        Mockito.when(hackerNewsApiService.getPastTopStories()).thenReturn(allStories.stream().collect(Collectors.toSet()));
+        Mockito.when(storyService.getPastTopStories()).thenReturn(allStories.stream().collect(Collectors.toSet()));
 
 
         // actual request for url.
@@ -101,7 +104,7 @@ class HackerNewsControllerTest {
 
     @Test
     void getTopTenCommentsSortedByCountOfChildComments() throws Exception {
-        Mockito.when(hackerNewsApiService.getTopTenCommentsByStoryId(Mockito.anyInt())).thenReturn(topTenComments);
+        Mockito.when(commentService.getTopTenCommentsByStoryId(Mockito.anyInt())).thenReturn(topTenComments);
         // actual request for url.
         mockMvc.perform(
                         MockMvcRequestBuilders.get("/api/v1/stories/comments/36270597").characterEncoding("UTF-8")
